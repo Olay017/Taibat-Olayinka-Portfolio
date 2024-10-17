@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-300 text-white">
+    <!-- header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-purple-800 shadow-lg">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="#" class="text-2xl font-bold flex justify-between"> 
+          <img
+                    src="IMG_2435.jpg"
+                    alt="profile image"
+                    class="w-10 h-10 rounded-full mr-6"
+                  />
+          Taibat Olayinka Yusuf
+        </a>
+        <div class="lg:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+        <!-- navbar links -->
+        <div id="menu" class="hidden lg:flex space-x-6">
+          <a href="#" class="hover:text-gray-400 transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Portfolio</a
+          >
+          <a
+            href="#service"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Service</a
+          >
+          <a
+            href="#contact"
+            class="hover:text-gray-400 transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+        <!-- hero secion -->
+        <section class="h-screen flex items-center justify-center relative">
+          <div class="text-center">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-4 text-gray-950">
+              Hello, I'm Olayinka
+            </h1>
+            <p class="text-lg lg:text-x-l mb-8 text-gray-950">
+                I am a Web developer and graphic designer. 
+            </p>
+            <a
+              href="#about"
+              class="inline-block bg-purple-800 hover:bg-purple-500 text-gray-200 font-medium py-3 px-6 rounded-md transition-colors duration-300"
+            >
+              View Portfolio
+            </a>
+          </div>
+          <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="bubble-animation"></div>
+            <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+            <div class="bubble-animation" style="bottom: 25%; left: 50%"></div>
+            <div class="bubble-animation" style="top: 50%; left: 90%"></div>
+            <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+            <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+            <div class="bubble-animation" style="top: 90%; left: 80%"></div>
+          </div>
+        </section>
+         <!-- about section -->
+      <section id="about" class="py-20 bg-purple-800">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 class="text-3xl font-bold mb-8">About Me</h2>
+              <p class="mb-6">
+                I'm a creative problem-solver passionate about 
+                front-end development, graphic design, and product management. 
+                I bring ideas to life from concept to execution through visual storytelling.
+              </p>
+              <p class="mb-6">
+                I'm passionate about web development and always looking for 
+                new challenges. I focus on creating responsive, accessible 
+                designs with fast performance and modern interactivity, 
+                turning ambitious ideas into reality
+              </p>
+            </div>
+            <div class="relative">
+              <img
+                src="IMG_2435.jpg"
+                alt="About Image"
+                class="w-full h-full object-cover rounded-md shadow-lg mx-auto"
+                style="width: 300px; height: 300px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- Portfolio Section -->
+       <section id="portfolio" class="py-20 bg-slate-300">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center text-purple-800">My Portfolio</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-purple-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="IMG_9123.PNG"
+                alt="Portfolio Item 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                <p>
+                  My first coursework project during product design training, 
+                  I designed a mobile app. The project involved creating a 
+                  user-friendly interface, focusing on responsive design, 
+                  intuitive navigation, and seamless user experience.
+                </p>
+              </div>
+            </div>
+            
+            <div class="bg-purple-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="IMG_8565.PNG"
+                alt="Portfolio Item 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2 ">Project 2</h3>
+                <p>
+                  My second project is focused on graphic design. 
+                  This project involved creating visually 
+                  compelling designs, exploring typography, color theory, 
+                  and layout principles to communicate effectively.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-purple-800 rounded-md shadow-lg overflow-hidden">
+              <img
+                src="IMG_2490.jpg"
+                alt="Portfolio Item 3"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                <p>
+                  On this project, I created my portfolio. This project allowed me to showcase my 
+                  skills. The portfolio serves as a reflection of my growth, 
+                  highlighting my abilities across various design discipline
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- Testimonials Section -->
+       <section id="testimonials" class="py-20 bg-slate-300">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center text-purple-800">Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-purple-800 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <div class="flex items-center p-4 space-x-4">
+                <div class="flex-shrink-0">
+                  <img
+                    src="web image.jpg"
+                    alt="image 1"
+                    class="w-12 h-12 rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold">Web Development</h3>
+                  <p class="text-gray-400">Newbie</p>
+                </div>
+              </div>
+              <div class="p-4">
+                <p>
+                  I offer web design services that focus on creating clean, 
+                  responsive, and user-friendly websites. I ensure that each site 
+                  delivers an engaging experience, optimized for performance and accessibility, 
+                  and tailored to meet clients' unique needs.
+                </p>
+              </div>
+            </div>
+            <div
+            class="bg-purple-800 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flex items-center p-4 space-x-4">
+              <div class="flex-shrink-0">
+                <img
+                  src="graphic image.avif"
+                  alt="image 2"
+                  class="w-12 h-12 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Graphic Design</h3>
+                <p class="text-gray-400">3 Projects</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p>
+                I provide graphic design services from logos to 
+                marketing materials, I create compelling visuals that communicate 
+                your brand's message effectively, ensuring a 
+                cohesive and professional look across all platforms.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-purple-900 rounded-md shadow-lg transform transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flex items-center p-4 space-x-4">
+              <div class="flex-shrink-0">
+                <img
+                  src="product design image.avif"
+                  alt="image 3"
+                  class="w-12 h-12 rounded-full"
+                />
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">UI/UX Design</h3>
+                <p class="text-gray-400">Newbie</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p>
+                I offer UI/UX design services that prioritize user 
+                experience and intuitive interfaces. My approach focuses 
+                on creating seamless, responsive designs that not only look 
+                great but also provide a smooth and engaging interaction for users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Contact Section -->
+     <section id="contact" class="py-20 bg-slate-300 relative">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center text-purple-800">Get in Touch</h2>
+        <form class="max-w-md mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block font-medium mb-2 text-purple-800">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full bg-gray-200 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block font-medium mb-2 text-purple-800">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full bg-gray-200 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block font-medium mb-2 text-purple-800"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full bg-gray-200 border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-purple-800 hover:bg-purple-500 text-gray-200 font-medium py-2 px-4 rounded-md transition-colors duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+          <div class="bubble-animation"></div>
+          <div class="bubble-animation" style="top: 20%; left: 30%"></div>
+          <div class="bubble-animation" style="top: 60%; left: 70%"></div>
+          <div class="bubble-animation" style="top: 80%; left: 10%"></div>
+          <div class="bubble-animation" style="top: 50%; left: 80%"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-purple-800 py-6">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <p class="text-gray-400">
+        &copy; 2024 Designed by Taibat Olayinka Yusuf.
+      </p>
+      <div class="space-x-4">
+        <a
+          href="#"
+          class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="#"
+          class="text-gray-400 hover:text-gray-300 transition-colors duration-300"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  </body>
+</html>
